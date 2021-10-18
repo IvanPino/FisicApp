@@ -4,21 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoform"
+    android:background="@drawable/fondo"
     tools:context=".Formulas">
 
     <LinearLayout
-        android:layout_width="358dp"
-        android:layout_height="509dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tituloformulas" />
 
         <ImageView
             android:id="@+id/btnforondas"
@@ -43,5 +48,13 @@
             android:layout_width="match_parent"
             android:layout_height="125dp"
             app:srcCompat="@drawable/btnelect" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/btnatras" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

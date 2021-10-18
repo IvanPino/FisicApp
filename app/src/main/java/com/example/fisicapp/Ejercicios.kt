@@ -14,6 +14,11 @@ class Ejercicios : AppCompatActivity() {
         val btnejmec =findViewById<ImageView>(R.id.btnformec)
         val btnenergej =findViewById<ImageView>(R.id.btnenergfor)
         val btnejelect =findViewById<ImageView>(R.id.btnforelect)
+        val imageView7 =findViewById<ImageView>(R.id.imageView7)
+
+        imageView7.setOnClickListener {
+            startActivity(Intent(this, MainMenu::class.java))
+        }
 
         btnejondas.setOnClickListener {
             startActivity(Intent(this, EjerciciosOndas::class.java))

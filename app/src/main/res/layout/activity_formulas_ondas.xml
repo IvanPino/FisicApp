@@ -4,19 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoform"
     tools:context=".FormulasOndas">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="486dp"
-        android:layout_marginTop="181dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tituloformulas" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -27,13 +35,15 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/imagesRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="449dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
 
         <ImageView
-            android:id="@+id/imageViewatras"
+            android:id="@+id/imageView6"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            app:srcCompat="@drawable/atras" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btnatras" />
 
     </LinearLayout>
 

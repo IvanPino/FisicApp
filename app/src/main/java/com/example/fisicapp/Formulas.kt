@@ -14,6 +14,7 @@ class Formulas : AppCompatActivity() {
         val btnformec =findViewById<ImageView>(R.id.btnformec)
         val btnenergfor =findViewById<ImageView>(R.id.btnenergfor)
         val btnforelect =findViewById<ImageView>(R.id.btnforelect)
+        val imageView4 =findViewById<ImageView>(R.id.imageView4)
 
         btnforondas.setOnClickListener {
             startActivity(Intent(this, FormulasOndas::class.java))
@@ -26,6 +27,9 @@ class Formulas : AppCompatActivity() {
         }
         btnforelect.setOnClickListener {
             startActivity(Intent(this, FormulasElect::class.java))
+        }
+        imageView4.setOnClickListener {
+            startActivity(Intent(this, MainMenu::class.java))
         }
     }
 }
