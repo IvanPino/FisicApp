@@ -18,9 +18,13 @@ class FormulasMecanica : AppCompatActivity() {
             Image("Images 4", R.drawable.img4),
         )
         val imageView6 =findViewById<ImageView>(R.id.imageView6)
+        val imageView9 =findViewById<ImageView>(R.id.imageView9)
 
         imageView6.setOnClickListener {
             startActivity(Intent(this, Formulas::class.java))
+        }
+        imageView9.setOnClickListener {
+            startActivity(Intent(this, MainMenu::class.java))
         }
 
         val recyclerView = findViewById<RecyclerView>(R.id.imagesRecyclerView)

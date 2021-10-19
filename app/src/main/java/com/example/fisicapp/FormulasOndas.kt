@@ -13,15 +13,22 @@ class FormulasOndas : AppCompatActivity() {
         setContentView(R.layout.activity_formulas_ondas)
 
         val images = listOf<Image>(
-            Image("Images 1", R.drawable.img1),
-            Image("Images 2", R.drawable.img2),
-            Image("Images 3", R.drawable.img3),
-            Image("Images 4", R.drawable.img4),
+            Image("Longitud de Onda", R.drawable.ondas_longitudonda),
+            Image("Periodo", R.drawable.ondas_periodo),
+            Image("Frecuencia", R.drawable.ondas_frecuencia),
+            Image("Frecuencia", R.drawable.ondas_frecondasestacionarias),
+            Image("Rapidez de propagación", R.drawable.ondas_rapidezpropag),
+            Image("Efecto Doppler", R.drawable.ondas_efectodopp),
+            Image("Índice de refracción", R.drawable.ondas_indicederefraccion),
         )
         val imageView6 =findViewById<ImageView>(R.id.imageView6)
+        val imageView9 =findViewById<ImageView>(R.id.imageView9)
 
         imageView6.setOnClickListener {
             startActivity(Intent(this, Formulas::class.java))
+        }
+        imageView9.setOnClickListener {
+            startActivity(Intent(this, MainMenu::class.java))
         }
 
         val recyclerView = findViewById<RecyclerView>(R.id.imagesRecyclerView)
