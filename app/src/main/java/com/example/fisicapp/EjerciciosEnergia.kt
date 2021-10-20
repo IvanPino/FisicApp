@@ -12,10 +12,10 @@ class EjerciciosEnergia : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicios_energia)
         val images = listOf<Image>(
-            Image("Images 1", R.drawable.img1),
-            Image("Images 2", R.drawable.img2),
-            Image("Images 3", R.drawable.img3),
-            Image("Images 4", R.drawable.img4),
+            Image("Capacidad calórica y calor específico", R.drawable.energ_capaccaroric),
+            Image("Images 2", R.drawable.energ_cinet),
+            Image("Images 3", R.drawable.energ_dilataclineal),
+            Image("Images 4", R.drawable.energ_dilatasup),
         )
         val imageView6 =findViewById<ImageView>(R.id.imageView6)
 
